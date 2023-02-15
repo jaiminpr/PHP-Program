@@ -1,0 +1,280 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Navbar</title>
+<style>
+      .bac{
+        background-image: linear-gradient(red,black);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2000px;
+        height: 1000px;
+    }
+    .nav {
+        display: flex;
+        gap: 500px;
+        border: 2px ridge gray;
+        box-shadow: 2px 2px 6px gray;
+        height: 60px;
+    }
+
+    ul li {
+        list-style: none;
+        display: flex;
+        display: inline;
+        padding: 5px;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        flex-direction: row;
+        padding-left: 100px;
+        font-size: 18px;
+        color: black;
+    }
+
+    h1 {
+        margin-left: 10px;
+        margin-bottom: 55px;
+        text-shadow: 1px 3px 3px black;
+    }
+
+    h1:hover {
+        transform: scale(1.2);
+        transition-duration: 5s;
+        transition-timing-function: 2s;
+        cursor: pointer;
+    }
+
+    ul li a:hover {
+        color: blue;
+        transition-duration: 3s;
+        transition-timing-function: 2s;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 50px;
+        color: brown;
+        animation-name: color;
+        animation-duration: 0.2s;
+        animation-iteration-count: 100;
+
+
+    }
+
+    @keyframes color {
+        from {
+            color: brown;
+        }
+
+        to {color:black ;
+        }
+
+    }
+
+    .p p {
+        text-align: center;
+        font-size: 20px;
+        color: yellow;
+        animation-name: pra;
+        animation-iteration-count: 10;
+        animation-duration: 20s;
+        animation-timing-function: 1s;
+    }
+
+    @keyframes pra {
+        from {
+            transform: translateX(-500px);
+        }
+
+        to {
+            transform: translate(400px);
+        }
+
+    }
+
+    .btn input {
+        border-radius: 120px;
+        text-align: center;
+        font-size: 20px;
+        width: 100px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 880px;
+        color: brown;
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        border: 1px ridge black;
+        border-radius: 100px;
+        margin-left: 880px;
+        padding: 10px;
+        margin-top: 20px;
+
+
+    }
+
+    .btn:hover {
+        transform: scale(0.9);
+        transition-duration: 1s;
+        transition-timing-function: 3;
+
+    }
+
+    .img {
+        display: flex;
+        gap: 8px;
+
+    }
+
+    .img img {
+        width: 400px;
+        height: 400px;
+        justify-content: center;
+        margin-left: 40px;
+        margin-top: 100px;
+        box-shadow: 1px 8px 20px black;
+    }
+
+    .img img:hover {
+        transform: scale(0.9);
+        transition-duration: 2s;
+        transition-timing-function: 5;
+        cursor: pointer;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 1px 2px 4px black;
+        font-size: 40px;
+    }
+
+    .list {
+        border: 2px solid black;
+        box-shadow: 2px 4px 6px black;
+    }
+
+    .list li {
+        text-align: center;
+        font-size: 18px;
+        color: black;
+        text-shadow: 1px 2px 5px black;
+    }
+
+    .list p {
+        text-shadow: 1px 2px 4px black;
+    }
+    .about{
+        display: flex;
+    }
+    .about p{
+        width: 800px;
+    }
+    .im{
+        display: flex;
+        gap:200px;
+    }
+    .im img{
+        width: 500px;
+        height: 500px;
+    }
+    .im img:hover{
+        transform: scaleX(0.9);
+        transition-duration: 3s;
+        transition-timing-function: 2s;
+        cursor: pointer;
+    }
+</style></head>
+
+
+<body>
+    <div class="bac">
+        <nav class="nav">
+            <h1>Apple</h1>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="Registration.html">Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="dis">
+            <h2>Wellcome To Coding</h2>
+            <div class="p">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, quam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, alias?</p>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="login.html">Let' Go</a>
+        </div>
+        <div class="img">
+            <img src="4.jpg">
+            <img src="3.jpeg">
+            <img src="2.jpeg">
+            <img src="1.jpeg">
+        </div>
+    </div>
+    <h3>Services</h3>
+    <div class="services">
+        <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius fugiat, magnam consectetur ea laboriosam
+                commodi impedit neque sequi. Mollitia, dolorem neque, debitis repudiandae, voluptatum eos earum quas
+                vitae dolores nulla fugit iusto harum ipsa? Magni cumque architecto delectus praesentium tenetur
+                similique possimus quidem perspiciatis odio eos eum est ut neque optio consequatur unde, illum at? Enim
+                iste soluta incidunt itaque? Aliquid, libero dolorum, animi quidem expedita dicta odit voluptatum qui
+                dolor veritatis sunt. Laborum nisi aspernatur veniam perspiciatis iusto. Tempore perferendis laboriosam
+                a debitis porro perspiciatis expedita assumenda mollitia veniam quae neque error repudiandae voluptatem
+                quos recusandae officia, amet molestiae!</b></p>
+        <div class="list">
+            <ol>
+                <li>Java</li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nesciunt in! Ut rerum vitae
+                    reprehenderit amet cumque sequi laboriosam animi.
+                </p>
+                <li>Python</li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio dicta natus error excepturi. Hic,
+                    cumque quas! Molestiae illum sint dolore corporis ad dolor, laudantium ex, expedita ipsam modi
+                    nostrum. </p>
+
+                <li>Javascript</li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi eos ullam, necessitatibus libero
+                    debitis consequuntur.</p>
+                <li>Wordpress</li>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, deserunt necessitatibus. Numquam quasi
+                    deleniti voluptates saepe. Laudantium aut esse magni!</p>
+            </ol>
+        </div>
+        <h3>About us</h3>
+        <div class="about">
+            
+            <p><b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit officiis laborum harum dolores porro quam dicta totam, facere eius recusandae nihil rerum sit voluptatibus ducimus commodi consectetur quod tempore aspernatur qui magnam quas iste earum repellendus non? Quae voluptate voluptatum atque sunt labore. Rerum distinctio voluptatum magni officiis explicabo non.</b></p>
+            
+            <div class="im">
+                <img src="j.jpeg">
+               
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body></html>
